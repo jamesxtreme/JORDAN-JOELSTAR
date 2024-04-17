@@ -1,5 +1,5 @@
 <p align="center">
-    <img alt="Suhail docs" height="500" src="https://github.com/jamesxtreme/gif/blob/main/919.gif">
+    <img alt="Suhail docs" height="300" src="https://github.com/jamesxtreme/gif/blob/main/919.gif">
   </a>
 </p>
 
