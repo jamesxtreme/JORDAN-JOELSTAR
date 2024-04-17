@@ -1,7 +1,7 @@
 {
   "name": "Miles@1.0.1",
-  "description": "I am Miles,your friendly neighborhood, built in NodeJs by Jordan-Joelstar for fun\n\t if you have issues : www.youtube.com/SuhailTechInfo",
-  "logo": "https://telegra.ph/file/5a06979ab4afb8ab7dccb.jpg?raw=true",
+  "description": "I am Miles,your friendly neighborhood, built in NodeJs by Jordan-Joelstar for fun\n\t if you have issues :https://tinyurl.com/295kym87",
+  "logo": "https://telegra.ph/file/5a06979ab4afb8ab7dccb.jpg",
   "keywords": ["whatsappbot", "suhailMd", "suhail Md bot", "Suhail-Md", "SuhailMdWhatsaooBot", "SuhailWaBot","SuhailMD","Suhail Md Whatsapp Bot","multi device"],
   "success_url": "/suhail/",
   "app_url": "/qr/",
