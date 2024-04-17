@@ -67,7 +67,7 @@
     "WAPRESENCE": {
       "description": "FILL THE VALUE: 'unavailable'(FOR NOTHING) | 'available'(FOR ALWAYSONLINE) | 'composing'(FOR TYPING) | 'recording' | 'PAUSED' ",
       "required" :false,
-      "value": "unavailable"
+      "value": "available"
     },
     "AUTO_READ_STATUS": {
       "description": "FILL THE VALUE TRUE IF YOU WANT BOT TO VIEW YOUR CONTACT STATUS.",
