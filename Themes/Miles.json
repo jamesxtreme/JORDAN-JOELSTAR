@@ -1,7 +1,7 @@
 {
     "__JSON__": true,
     "AUTHOR": "Jordan",
-    "theme": "Miles",
+    "theme": "🕸《M》《I》《L》《E》《S》🕷",
     "LANGUAGE": "English",
     "LANGCODE": "en", 
     "STRINGS": { 
@@ -11,7 +11,7 @@
             "UPDATED_LOCAL": "*Successfully Updated!*"
         },  
         "global": {      
-            "botName": "🕷𝕄𝕀𝕃𝔼𝕊🕸",
+            "botName": "🕸《M》《I》《L》《E》《S》🕷",
             "body": "whatsapp User Bot", 
             "greet2" : "Thanks To Jordan",
             "pic1": "https://telegra.ph/file/54efddccf41281ad7ec51.jpg", 
@@ -27,8 +27,8 @@
             "antlink": "Link Detected.\n*Good Bye Rouge pirate*",
             "session": "\n*This is your session.json,keep it safe and store it properly*\n_Now Upload This json file in Your Forked Repo_\n Connect your repo to Heroku and *Deploy Branch* and Bot will run for Always\n\n*Powered by Gifted_Tech*",
             "mention": " Please mention My Owner",
-            "title": "Miles",
-            "footer": " Miles\n ",
+            "title": "🕸《M》《I》《L》《E》《S》🕷",
+            "footer": " 🕸《M》《I》《L》《E》《S》🕷\n ",
             "by": "Made by: Jordan",
             "chat_desc": "Options Avilable* : 1. mute\n2. unmute\n3. archive\n4. unarchive\n5. read\n6. unread\n7. delete",
             "success": "Done ✓",
