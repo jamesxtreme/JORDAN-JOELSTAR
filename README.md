@@ -4,13 +4,13 @@
 </p>
 
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=🕸️HI+There🕸️;🤖I'm+Jordan-Joelstar🤖;🕷️An+upgraded+version+of+Suhail-Md🕷️;🤟🏽with+huge+updates+and+features🤟🏽;🎧Created+By+Jordan-Joelstar🎧)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=🕸HI+There🕸️;🕷Im+Miles🕷;🎧Created+By+Jordan-Joelstar🎧)](https://git.io/typing-svg)
 </p>
 
 ---
 
 <p align="center">
-  <a href="https://github.com/jamesxtreme/JORDAN-JOELSTAR"><b>𝐉𝐎𝐑𝐃𝐀𝐍-𝐉𝐎𝐄𝐋𝐒𝐓𝐀𝐑 🤖</b></a> Support Deploy On...
+  <a href="https://github.com/jamesxtreme/JORDAN-JOELSTAR"><b>《M》《I》《L》《E》《S》</b></a> Support Deploy On...
 </p>
 
 <p align="center">
@@ -78,7 +78,7 @@
 ---
 
 
-- Star⭐ 𝙹𝙾𝚁𝙳𝙰𝙽-𝙹𝙾𝙴𝙻𝚂𝚃𝙰𝚁 🤖 repo if you like this bot.
+- Star⭐ JORDAN-JOELSTAR repo if you like this bot.
 - If any problem, then [`Message me`](https://wa.me/+2349054039891)
 
 
