@@ -46,7 +46,7 @@
 ## STEPS TO DEPLOY MILES
 ---
 <details close>
-<summary>Click to choose your favourite platform to Deploy</summary>
+<summary>𝙲𝙻𝙸𝙲𝙺 𝚃𝙾 𝙾𝙿𝙴𝙽 𝙳𝙴𝙿𝙻𝙾𝚈 𝙿𝚁𝙾𝙲𝙴𝚂𝚂</summary>
 
 2. ***Get Session ID (SERVER 1)***
     <br>
