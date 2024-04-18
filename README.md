@@ -12,7 +12,7 @@
 ---
 
 <p align="center">
-  <a href="https://github.com/jamesxtreme/JORDAN-JOELSTAR"><b>《M》《I》《L》《E》《S》</b></a> Support Deploy On...
+  <a href="https://github.com/jamesxtreme/JORDAN-JOELSTAR"><b>《M》《I》《L》《E》《S》</b></a> SUPPORT DEPLOY ON...
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
 <p align="center">
   <a href="https://youtu.be/3NdJb6_1cJM"><img src="https://img.shields.io/badge/CodeSpace-blue?colorA=%23ff000&colorB=%23017e40&style=for-the-badge&logo=git&logoColor=white"></a>
 </p>
-<p align="center">Need help? please create an <a href="https://github.com/jamesxtreme/JORDAN-JOELSTAR/issues">ISSUE</a></p>
+<p align="center">NEED HELP? PLEASE CREATE AN <a href="https://github.com/jamesxtreme/JORDAN-JOELSTAR/issues">ISSUE</a></p>
  
 
 
