@@ -86,7 +86,7 @@
     },
     "DISABLE_PM": {
       "description": "MAKE IT 'false' IF YOU WANNA RUN BOT IN YOUR PM (IF MODE IS PUBLIC)",
-      "value": "false",
+      "value": "true",
       "required" :false
     },
     "PREFIX": {
