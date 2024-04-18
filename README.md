@@ -79,7 +79,7 @@
 
 | [![SlasherOfficial](https://github.com/Maher-Zubair.png?lenght=50width=50)](https://github.com/Maher-Zubair) |
 |----|
-| [ 𝙈𝘼𝙃𝙀𝙍 𝙕𝙐𝘽𝘼𝙄𝙍 ](https://github.com/Maher-Zubair) |
+| [ 𝙈𝘼𝙃𝙀𝙍 𝙕𝙐𝘽𝘼𝙄𝙍 ](https://github.com/SuhailTechInfo) |
 |  Co.Owner , Bug Fixer, |
 
   </div>
@@ -87,5 +87,5 @@
    ## 
 | [![Xcelsama](https://github.com/Xcelsama.png?lenght=50width=50)](https://github.com/Xcelsama) |
 |----|
-| [ 乂匚乇ㄥ丂卂爪卂](https://github.com/Xcelsama) |
+| [ 乂匚乇ㄥ丂卂爪卂](https://github.com/Jamesxtreme) |
 |  Co.Owner , Bug Fixer,Tester
