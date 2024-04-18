@@ -73,12 +73,12 @@
     <br>
 <a href="https://youtu.be/d6FuP_ARfD0?si=N-g6s9ke9D1sHGCW"><img src="https://img.shields.io/badge/𝗬𝗢𝗨𝗧𝗨𝗕𝗘-black?style=watch%20video-critical?style=for-the-badge&logo=youtube&logoColor=blue">
    <br>
-   
+ ---
 
 
 
 
-##
+## SPECIAL THANKS TO
 
 | [![SUHAILTECHINFO](https://telegra.ph/file/3d0ebc84bc5d6d7c5f262.jpg?lenght=50width=50)](https://github.com/SuhailTechInfo) |
 |----|
