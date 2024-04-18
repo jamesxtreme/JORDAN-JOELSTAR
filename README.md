@@ -45,6 +45,9 @@
    
 ## STEPS TO DEPLOY MILES
 ---
+<details close>
+<summary>Click to choose your favourite platform to Deploy</summary>
+
 2. ***Get Session ID (SERVER 1)***
     <br>
 <a href='https://jweb1-84e086460531.herokuapp.com/' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=blue&labelColor=black&color=black'/></a>
