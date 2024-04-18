@@ -82,7 +82,8 @@
 
 
 
-## SPECIAL THANKS TO
+ <details close>
+<summary>𝗖𝗢𝗡𝗧𝗥𝗜𝗕𝗨𝗧𝗢𝗥𝗦</summary>
 
 | [![SUHAILTECHINFO](https://telegra.ph/file/3d0ebc84bc5d6d7c5f262.jpg?lenght=50width=50)](https://github.com/SuhailTechInfo) |
 |----|
