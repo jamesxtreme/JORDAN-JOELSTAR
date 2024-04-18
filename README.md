@@ -76,23 +76,16 @@
 
 
 ##
----
----
 
+| [![SlasherOfficial](https://github.com/Maher-Zubair.png?lenght=50width=50)](https://github.com/Maher-Zubair) |
+|----|
+| [ 𝙈𝘼𝙃𝙀𝙍 𝙕𝙐𝘽𝘼𝙄𝙍 ](https://github.com/Maher-Zubair) |
+|  Co.Owner , Bug Fixer, |
 
-- Star⭐ JORDAN-JOELSTAR repo if you like this bot.
-- If any problem, then [`Message me`](https://wa.me/+2349054039891)
-
-
-### Thanks To
-- [JORDAN-JOELSTAR](https://github.com/jamesxtreme) 
-
-
-
-
-
-   
-### NOTICE
-- *𝐉𝐎𝐑𝐃𝐀𝐍-𝐉𝐎𝐄𝐋𝐒𝐓𝐀𝐑-Bot is not made by `WhatsApp Inc.`  Misusing the bot might `ban` your `WhatsApp account!`*
-- *In that case, I'm not responsible for banning your account.*
-- *Use 𝐉𝐎𝐑𝐃𝐀𝐍 𝐉𝐎𝐄𝐋𝐒𝐓𝐀𝐑-Bot at your own risk by keeping this warning in mind.*
+  </div>
+  
+   ## 
+| [![Xcelsama](https://github.com/Xcelsama.png?lenght=50width=50)](https://github.com/Xcelsama) |
+|----|
+| [ 乂匚乇ㄥ丂卂爪卂](https://github.com/Xcelsama) |
+|  Co.Owner , Bug Fixer,Tester
