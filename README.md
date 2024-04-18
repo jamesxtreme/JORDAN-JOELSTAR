@@ -77,7 +77,7 @@
 
 ##
 
-| [![SlasherOfficial](https://github.com/Maher-Zubair.png?lenght=50width=50)](https://github.com/Maher-Zubair) |
+| [![SUHAILTECHINFO](https://telegra.ph/file/3d0ebc84bc5d6d7c5f262.jpg?lenght=50width=50)](https://github.com/SuhailTechInfo) |
 |----|
 | [ 𝙈𝘼𝙃𝙀𝙍 𝙕𝙐𝘽𝘼𝙄𝙍 ](https://github.com/SuhailTechInfo) |
 |  Co.Owner , Bug Fixer, |
