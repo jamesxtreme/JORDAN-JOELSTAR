@@ -44,9 +44,6 @@
     
    
 ## STEPS TO DEPLOY MILES
----
-<details close>
-<summary>𝙲𝙻𝙸𝙲𝙺 𝚃𝙾 𝙾𝙿𝙴𝙽 𝙳𝙴𝙿𝙻𝙾𝚈 𝙿𝚁𝙾𝙲𝙴𝚂𝚂</summary>
 
 2. ***Get Session ID (SERVER 1)***
     <br>
@@ -79,14 +76,7 @@
 <p align="center" >
     <br>
     __________________________
-    <br>
-</p>
-
-
-
-</details>
-
-<br>
+    
  
 ---
 
