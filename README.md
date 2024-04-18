@@ -73,8 +73,22 @@
     <br>
 <a href="https://youtu.be/d6FuP_ARfD0?si=N-g6s9ke9D1sHGCW"><img src="https://img.shields.io/badge/𝗬𝗢𝗨𝗧𝗨𝗕𝗘-black?style=watch%20video-critical?style=for-the-badge&logo=youtube&logoColor=blue">
    <br>
- ---
 
+</p>
+
+<p align="center" >
+    <br>
+    __________________________
+    <br>
+</p>
+
+
+
+</details>
+
+<br>
+ 
+---
 
 
 
