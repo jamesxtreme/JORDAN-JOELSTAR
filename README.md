@@ -1,4 +1,5 @@
-![](https://github.com/jamesxtreme/gif/blob/main/919.gif)
+<p align="center"> 
+    ![](https://github.com/jamesxtreme/gif/blob/main/919.gif)
 
 <p align="center">
     <img alt="Suhail docs" height="300" src="https://telegra.ph/file/5a06979ab4afb8ab7dccb.jpg">
