@@ -6,7 +6,7 @@
 </p>
 
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=🕸HI+There🕸️;🕷Im+Miles🕷;🎧Created+By+Jordan-Joelstar🎧)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=🕸HI+THERE🕸️;🕷IM+MILES🕷;🎧CREATED+BY+JORDAN-JOELSTAR🎧)](https://git.io/typing-svg)
 </p>
 
 ---
