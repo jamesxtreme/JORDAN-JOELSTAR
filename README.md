@@ -79,13 +79,10 @@
 
 | [![SUHAILTECHINFO](https://telegra.ph/file/3d0ebc84bc5d6d7c5f262.jpg?lenght=50width=50)](https://github.com/SuhailTechInfo) |
 |----|
-| [ 𝙈𝘼𝙃𝙀𝙍 𝙕𝙐𝘽𝘼𝙄𝙍 ](https://github.com/SuhailTechInfo) |
-|  Co.Owner , Bug Fixer, |
+| [SUHAILTECHINFO](https://github.com/SuhailTechInfo) |
+|  BOT BASE , ERROR FIXES, |
 
   </div>
   
    ## 
-| [![Xcelsama](https://github.com/Xcelsama.png?lenght=50width=50)](https://github.com/Xcelsama) |
-|----|
-| [ 乂匚乇ㄥ丂卂爪卂](https://github.com/Jamesxtreme) |
-|  Co.Owner , Bug Fixer,Tester
+NIMI`](https://wa.me/2349031432649)
