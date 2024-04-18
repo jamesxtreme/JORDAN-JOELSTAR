@@ -44,7 +44,7 @@
 
     
    
-## Deployment Methods
+## STEPS TO DEPLOY MILES
 ---
 2. ***Get Session ID (SERVER 1)***
     <br>
