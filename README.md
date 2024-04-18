@@ -29,7 +29,7 @@
 
 
 
-## BOT FEATURES
+### BOT FEATURES
 ---
 ---
 [![Typing SVG](https://readme-typing-svg.demolab.com/?lines=🕷ANIME,+AI,+GAMES,+FUN;MEDIA,+DOWNLOADER,+LOGO,+EDITS;GROUP,+CHATS,+PRIVACY,+GFX;STICKER,+EMAIL,+CONVERTER,+A-REPLY;AND+MUCH+MORE...🕸)](https://git.io/typing-svg)
