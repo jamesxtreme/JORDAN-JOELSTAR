@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background: #111;
+}
+
+#text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 6vw;
+font-family: Arial, sans-serif;
+color: #FF0000;
+text-shadow: 0px 0px 10px #0000FF;
+white-space: nowrap;
+text-align: center;
+width: 100%;
+}
+
+.animate {
+animation: move 2s infinite;
+}
+
+@keyframes move {
+0% {
+transform: translate(-50%, -50%) scale(1);
+}
+50% {
+transform: translate(-50%, -50%) scale(1.2);
+}
+100% {
+transform: translate(-50%, -50%) scale(1);
+}
+}
+
+body::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background-image: 
+linear-gradient(to bottom, #111 50%, transparent 50%),
+linear-gradient(to right, #111 50%, transparent 50%),
+linear-gradient(to bottom, #111 50%, transparent 50%),
+linear-gradient(to right, #111 50%, transparent 50%);
+background-size: 20px 20px, 20px 20px, 40px 40px, 40px 40px;
+background-position: 0% 0%, 0% 100%, 100% 0%, 100% 100%;
+z-index: -1;
+}
+</style>
+</head>
+<body>
+<h1 id="text" class="animate">JORDAN-JOELSTAR</h1>
+</body>
+</html>
