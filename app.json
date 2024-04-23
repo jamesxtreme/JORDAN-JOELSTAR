@@ -1,0 +1,140 @@
+{
+  "name": "Miles@1.0.1",
+  "description": "I am Miles,your friendly neighborhood, built in NodeJs by Jordan-Joelstar for fun\n\t if you have issues :https://tinyurl.com/295kym87",
+  "logo": "https://telegra.ph/file/5a06979ab4afb8ab7dccb.jpg",
+  "keywords": ["whatsappbot", "suhailMd", "suhail Md bot", "Suhail-Md", "SuhailMdWhatsaooBot", "SuhailWaBot","SuhailMD","Suhail Md Whatsapp Bot","multi device"],
+  "success_url": "/suhail/",
+  "app_url": "/qr/",
+  
+  "env": {
+    "OWNER_NAME": {
+      "description": "BOT OWNER NAME",    
+      "value": "𝕁𝕆ℝ𝔻𝔸ℕ-𝕁𝕆𝔼𝕃𝕊𝕋𝔸ℝ",
+      "required" :true
+    },   
+     
+    "WELCOME": {
+      "description": "PUT 'true' OR 'false' TO ENABLE & DISABLE WELCOME ",
+      "value": "false",
+      "required" :false
+    },
+     
+    "GOODBYE": {
+      "description": "FIX 'false' OR 'true' TO ENABLE & DISABLE GOODBYE ",
+      "value": "false",
+      "required" :false
+    },
+    "BOT_NAME": {
+      "description": " NAME FOR BOT",
+      "required" :false,    
+      "value": "《M》《I》《L》《E》《S》"
+    }, 
+    "TZ": {
+      "description": "PUT TIME_ZONE ACCORDING TO YOUR LOCATION",
+      "required" :false,    
+      "value": "Africa/Lagos"
+    },  
+    "FLUSH": {
+      "description": " MAKE IT 'TRUE' IF BOT CONNECTED BUT NOT RESPONED (AFTER DEPLOYEMENT!)",
+      "required" :false,    
+      "value": "false"
+    },     
+    "READ_COMMAND": {
+      "description": " MILES BLUE TICKS COMMANDS IF THIS IS SET 'true'",
+      "required" :false,    
+      "value": "false"
+    },
+    "WARN_COUNT": {
+      "description": "WARN COUNT FOR USERS TO KICK/BLOCK WHEN WARN LIMIT EXCEEDED!",
+      "required" :false,    
+      "value": "2"
+    },  
+    "AUTO_SAVE_STATUS": {
+      "description": " AUTO SAVE WHATSAPP STATUS", 
+      "required" :false,   
+      "value": "false"
+    }, 
+    "HEROKU_API_KEY": {
+      "description": "PUT YOUR HEROKU API KEY HERE",
+      "value": "",
+      "required" :true 
+    },   
+    "HEROKU_APP_NAME": {
+      "description": "PUT YOUR HEROKU APP NAME HERE-ALL CHARACTERS MUST BE IN LOWERCASE",
+      "value": "",
+    "required" :true
+    }, 
+    "WAPRESENCE": {
+      "description": "FILL THE VALUE: 'unavailable'(FOR NOTHING) | 'available'(FOR ALWAYSONLINE) | 'composing'(FOR TYPING) | 'recording' | 'PAUSED' ",
+      "required" :false,
+      "value": "available"
+    },
+    "AUTO_READ_STATUS": {
+      "description": "FILL THE VALUE TRUE IF YOU WANT BOT TO VIEW YOUR CONTACT STATUS.",
+      "required" :false,
+      "value": "true"
+    }, 
+    "MSGS_IN_LOG": {
+      "description": "FILL THE VALUE 'true' IF YOU WANT TO SEE MESSAGES IN LOGS.",
+      "required" :false,
+      "value": "false"
+    },
+    "READ_MESSAGE": {
+      "description": "FILL THE VALUE TRUE IF YOU WANT BOT TO READ ALL MESSAGES.",
+      "required" :false,
+      "value": "false"
+    },
+    "DISABLE_PM": {
+      "description": "MAKE IT 'false' IF YOU WANNA RUN BOT IN YOUR PM (IF MODE IS PUBLIC)",
+      "value": "true",
+      "required" :false
+    },
+    "PREFIX": {
+      "description": "ENTER YOUR DESIRED PREFIX FOR BOT. YOU CAN SET `ALL |null | . | .!*`",
+      "value": "."
+    },
+    "OWNER_NUMBER": {
+      "description": "THE PHONE NUMBERS OF THE USERS WHO YOU WANT TO BE ADMIN FOR THE BOT (SHOULD BE IN INTERNATIONAL FORMAT WITHOUT + AND MULTIPLE NUMBERS MUST BE SEPARATED BY A COMMA \",\")",
+      "value": "2349054039891,2347061138624,2349043487099"
+    },
+    "SESSION_ID": {
+      "description": "PUT YOUR SESSION_ID HERE.",
+      "value": ""
+  
+    },
+    "OPENAI_API_KEY": {
+      "description": "PUT YOUR OPENAI API KEY HERE.GET IT FROM BETA.OPENAI.COM",
+      "value": "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",
+      "required" :false
+    }, 
+    "ELEVENLAB_API_KEY": {
+      "description": "PUT YOUR ELEVENLAB API KEY HERE FOR AITTS.",
+      "value": "b83709a7a0691e09fbe13db39068056a",
+      "required" :false
+    }, 
+    "REMOVE_BG_KEY": {
+      "description": "PUT YOUR REMOVE BG KEY HERE.",
+      "value": "diVYfA5PJpwMSDrMCj2BYbnc",
+      "required" :false
+    },
+    "MODE": {
+      "description": "WORKTYPE OF YOUR BOT.",
+      "value": "private"
+    },
+    "PACK_NAME": {
+      "description": "STICKER PACK NAME.",
+      "value": "🅹🄾🆁🅳🄰🄽-🅹🄾🅴🄻🅂🅃🄰🆁",
+      "required": false 
+    },
+    "PACK_AUTHOR": {
+      "description": "STICKER AUTHOR NAME.",
+      "value": "🅹🄾🆁🅳🄰🄽-🅹🄾🅴🄻🅂🅃🄰🆁",
+      "required": false 
+    }
+  }, 
+  "addons": [{ "plan": "heroku-postgresql:basic" }],
+  "buildpacks": [
+    { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" },
+    { "url": "https://github.com/carlosdommor/heroku-buildpack-ffmpeg-latest" }
+  ]
+}
