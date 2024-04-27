@@ -1,65 +1,141 @@
-/**
-//════════════════════════════════════════════════════════════════════════════════════════════//
-//                                                                                            //
-//                                ＷＨＡＴＳＡＰＰ ＢＯＴ－ＭＤ ＢＥＴＡ                          //
-//                                                                                            // 
-//                                         Ｖ：2．5．0                                         // 
-//                                                                                            // 
-//                                                                                            ███████████████████████████████████████████████████████████████████████████████
-█░░░░░░██████████░░░░░░█░░░░░░░░░░█░░░░░░█████████░░░░░░░░░░░░░░█░░░░░░░░░░░░░░
-█░░▄▀░░░░░░░░░░░░░░▄▀░░█░░▄▀▄▀▄▀░░█░░▄▀░░█████████░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░
-█░░▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀░░█░░░░▄▀░░░░█░░▄▀░░█████████░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░░░
-█░░▄▀░░░░░░▄▀░░░░░░▄▀░░███░░▄▀░░███░░▄▀░░█████████░░▄▀░░█████████░░▄▀░░████████
-█░░▄▀░░██░░▄▀░░██░░▄▀░░███░░▄▀░░███░░▄▀░░█████████░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░░░
-█░░▄▀░░██░░▄▀░░██░░▄▀░░███░░▄▀░░███░░▄▀░░█████████░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░
-█░░▄▀░░██░░░░░░██░░▄▀░░███░░▄▀░░███░░▄▀░░█████████░░▄▀░░░░░░░░░░█░░░░░░░░░░▄▀░░
-█░░▄▀░░██████████░░▄▀░░███░░▄▀░░███░░▄▀░░█████████░░▄▀░░█████████████████░░▄▀░░
-█░░▄▀░░██████████░░▄▀░░█░░░░▄▀░░░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░░░█░░░░░░░░░░▄▀░░
-█░░▄▀░░██████████░░▄▀░░█░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░
-█░░░░░░██████████░░░░░░█░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░
-███████████████████████████████████████████████████████████████████████████████
-//                                                                                            //
-//                                                                                            //
-//                                                                                            //
-//                                                                                            //
-//════════════════════════════════════════════════════════════════════════════════════════════//
-*                                                                 
-  * @project_name : MILES
-   * @author : JORDAN-JOELSTAR.
-   * @Wa-group : https://chat.whatsapp.com/KtwIw190SAAGWP2UJdPiDQ 
-   * @description : Miles ,A Multi-functional whatsapp user bot.
-   * @version 2.5.0
-*
-* 
-   * Created By JORDAN-JOELSTAR.
-   * © 2024 Miles.
-
-
-*/
-let Miles_Md = "Miles Whatsapp bot md"
-
-
 const moment = require('moment-timezone')
-const {fetchJson,smd, tlang,send, getBuffer, prefix, Config ,groupdb } = require('../lib')
+const {fetchJson,smd, tlang,send, shazam, getBuffer, prefix, Config ,groupdb } = require("../lib")
 let gis = require("async-g-i-s");
 const axios = require('axios')
 const fetch = require('node-fetch')
+smd(
+  {
+    pattern: "lyrics",
+    desc: "Get the lyrics of a song.",
+    category: "search",
+    filename: __filename,
+    use: "<song_name>",
+  },
+  async (m, songName) => {
+    try {
+      if (!songName) {
+        return await m.send("*_Please provide a song name!_*");
+      }
 
-   //---------------------------------------------------------------------------
-   const { shazam } = require('../lib')
-   let yts = require("secktor-pack");
+      const apiUrl = `https://api.maher-zubair.tech/search/lyrics?q=${encodeURIComponent(
+        songName
+      )}`;
+      const response = await fetch(apiUrl);
+
+      if (!response.ok) {
+        return await m.send(
+          `*_Error: ${response.status} ${response.statusText}_*`
+        );
+      }
+
+      const data = await response.json();
+
+      if (data.status !== 200) {
+        return await m.send("*_An error occurred while fetching the data._*");
+      }
+
+      const { artist, lyrics, title } = data.result;
+
+      const lyricsMessage = `
+*Song:* ${title}
+*Artist:* ${artist}
+
+${lyrics}
+`;
+
+      await m.send(lyricsMessage);
+    } catch (e) {
+      await m.error(`${e}\n\ncommand: lyrics`, e);
+    }
+  }
+);
+smd({
+    pattern: "bing",
+    alias: ["bingsearch"],
+    desc: "Search on Bing.",
+    category: "search",
+    filename: __filename,
+    use: "<search query>"
+  }, async (msg, query) => {
+    try {
+      if (!query) {
+        return await msg.reply("*Please provide a search query.*");
+      }
+  
+      const apiUrl = `https://api-smd.onrender.com/api/bingsearch?query=${encodeURIComponent(query)}`;
+      const response = await fetch(apiUrl).then(res => res.json());
+  
+      if (!response || !response.status) {
+        return await msg.reply("*An error occurred while fetching the search results.*");
+      }
+  
+      const results = response.result;
+      let resultText = `*Bing Search Results for "${query}"*\n\n`;
+  
+      for (const result of results) {
+        resultText += `*Title:* ${result.title}\n*Description:* ${result.description}\n*URL:* ${result.url}\n\n`;
+      }
+  
+      await msg.reply(resultText);
+    } catch (err) {
+      await msg.error(err + "\n\ncommand: bing", err, "*An error occurred while searching on Bing.*");
+    }
+  });
+  
+  smd(
+    {
+      pattern: "zip",
+      alias: ["zipcode"],
+      desc: "Provides information about a US zip code.",
+      category: "tools",
+      use: "zip [zip_code]",
+      examples: ["zip 90001", "zip 33162"]
+    },
+    async (message, input) => {
+      const zipCode = input;
+  
+      if (!zipCode) {
+        return message.reply("Please provide a zip code.");
+      }
+  
+      try {
+        const response = await axios.get(`https://api.zippopotam.us/us/${zipCode}`);
+        const { postCode, country, countryAbbreviation, places } = response.data;
+  
+        let output = `
+  *Zip Code:* ${postCode}
+  *Country:* ${country} (${countryAbbreviation})
+  *Places:*
+  `;
+  
+        places.forEach((place, index) => {
+          output += `\n${index + 1}. ${place["place name"]}, ${place.state} (${place.latitude}, ${place.longitude})`;
+        });
+  
+        await message.send(output);
+      } catch (error) {
+        await message.error(
+          error + "\n\nCommand: zip",
+          error,
+          "Failed to retrieve zip code information."
+        );
+      }
+    }
+  );
+ 
    smd({
-           pattern: "find",
-           alias :["shazam"],
+           pattern: "shazam",
            category: "search",
            desc: "Finds info about song",
            filename: __filename,
        },
        async(message) => {
          try{
+             
             let mime = message.reply_message ? message.reply_message.mtype : ''
             if (!/audio/.test(mime)) return message.reply(`Reply audio ${prefix}find`);
             let buff = await message.reply_message.download();
+           const { shazam } = require(lib_dir)
             let data = await shazam(buff);
             if (!data || !data.status) return message.send(data);
             let h =`*TITLE: _${data.title}_* \n*ARTIST: _${data.artists}_*\n *ALBUM:* _${data.album}_ `
@@ -70,16 +146,16 @@ const fetch = require('node-fetch')
     //------------------------------------------------------------------------------------
 
 smd({
-   pattern: "github",
+   pattern: "git",
    category: "search",
-   desc: "Finds info about song",
+   desc: "Finds info about a github profile",
    filename: __filename,
 },
 async(message, match) => {
  try{
 
-   message.react("🔍")
-         if (!match) return message.reply(`Give me a user name like ${prefix}github mouricedevs`)
+   message.react("🤳🏽")
+         if (!match) return message.reply(`Give me a user name like ${prefix}github Astropeda`)
 
          const { data } = await axios(`https://api.github.com/users/${match}`)
    if(!data) return await message.send(`*_Didn't get any results, Provide valid user name!_*`)
@@ -124,32 +200,6 @@ async(m) => {
 
 
    })
-//------------------------------------------------------------------------------------
-
-
-
-
-
-
-    //---------------------------------------------------------------------------
-smd({pattern: 'lyrics', alias :['lyric'],category: "search", desc: "Searche lyrics of given song name",use: '<text | song>',filename: __filename,},
-
-    async(message, text,{cmdName}) => {
-    if (!text) return message.reply(`*_Uhh please, give me song name_*\n*_Example ${prefix+cmdName} blue eyes punjabi_*`);
-    try {
-      const res = await ( await fetch(`https://inrl-web.onrender.com/api/lyrics?text=${text}`) ).json();
-      if(!res.status) return message.send("*Please Provide valid name!!!*");
-      if(!res.result) return message.send("*There's a problem, try again later!*");
-      const { thumb,lyrics,title,artist } = res.result, tbl= "```", tcl ="*", tdl = "_*", contextInfo = { externalAdReply: { ...(await message.bot.contextInfo("ɢɪғᴛᴇᴅ-ᴍᴅ",`Lyrics-${text}`))} }
-  await send(message, `*𝚃𝚒𝚝𝚕𝚎:* ${title}\n*𝙰𝚛𝚝𝚒𝚜𝚝:* ${artist} \n${tbl}${lyrics}${tbl} `,{contextInfo  : contextInfo },"");
-
-}catch(e){return await message.error(`${e}\n\n command: ${cmdName}`,e,`*_Didn't get any lyrics, Sorry!_*`) }
-
-
-
-
-
-})
 
 
     //---------------------------------------------------------------------------
@@ -162,6 +212,7 @@ smd({
         },
         async(message, match) => {
           try{
+             message.react("🔍")
             if (!match) return message.reply(`_Name a Series or movie ${tlang().greet}._`);
             let {data} = await axios.get(`http://www.omdbapi.com/?apikey=742b2d09&t=${match}&plot=full`);
             if(!data || data.cod == '404') return await message.reply(`*_Please provide valid country name!_*`)
@@ -199,7 +250,8 @@ smd({
         },
         async(message, text) => {
           try{
-            if (!text) return message.reply(`*_Give me city name, ${message.isCreator ? "Buddy" : "Idiot"}!!_*`);
+
+            if (!text) return message.reply(`*_Give me city name, ${message.isCreator ? "Master" : "Idiot"}!!_*`);
             let {data} = await axios.get( `https://api.openweathermap.org/data/2.5/weather?q=${text}&units=metric&appid=060a6bcfa19809c2cd4d97a212b19273&language=en`);
             if(!data || data.cod === '404') return await message.reply(`*_Please provide valid city name!_*`)
             let textw = `*🌟Weather of  ${text}*\n\n`;
@@ -232,7 +284,7 @@ smd({
          if (!match) return message.reply('Please give me package name.📦')
          const {data} = await axios.get(`https://api.npms.io/v2/search?q=${match}`)
         let txt = data.results.map(({ package: pkg }) => `*${pkg.name}* (v${pkg.version})\n_${pkg.links.npm}_\n_${pkg.description}_`).join('\n\n')?.trim()
-          data && txt ? await message.reply(txt) : await message.reply('*No Result Found. Sorry!!*')
+          data && txt ? await message.reply(txt) : await message.reply('*No Result Found. No vex🙍🏽‍♂️!*')
           }catch(e){await message.error(`${e}\n\ncommand : npm`, e  )}
      }
  )
@@ -303,32 +355,135 @@ text +="\n*Match Ended:* " + dat.data[i].matchEnded;
 })
 
 //---------------------------------------------------------------------------
-smd({
-            pattern: "google",
-            alias :['search','gsearch','ggle'],
-            category: "search",
-            desc: "Sends info of given query from Google Search.",
-            use: '<text>',
-            filename: __filename,
-        },
-        async(message, text) => {
-          try{
-            if (!text) return message.reply(`*_Boss abeg, give me a query because i dont like stress👀_*\n*_Example : ${prefix}google Nigeria._*`);
-            let google = require('google-it');
-            google({ 'query': text}).then(res => {
-                let msg= `Google Search From : ${text} \n\n`;
-                for (let g of res) {
-                    msg+= `➣ Title : ${g.title}\n`;
-                    msg+= `➣ Description : ${g.snippet}\n`;
-                    msg+= `➣ Link : ${g.link}\n\n────────────────────────\n\n`;
-                }
 
-                return message.reply(msg);
-            })
-          }catch(e){return await message.error(`${e}\n\n command: google`,e,`*_Uhh dear, Didn't get any results!_*`) }
-
-        }
     )
+
+
+
+// let downImages = async(query="",safe="on")=>{
+//     if(!query) throw "need search query"
+// const gimg_api = async(query)=>{
+//     let { data } = await axios(`${api_smd}/api/gimg?query=${encodeURIComponent(query)}` )
+//     if(data && data.status && Array.isArray(data.result) && data.result.length > 0) return data.result
+//     else return false
+// }
+// const bing_api = async(query)=>{
+//     let { data } = await axios(`${api_smd}/api/bingimg?query=${encodeURIComponent(query)}` )
+//     if(data && data.status && Array.isArray(data.result) && data.result.length > 0) return data.result
+//     else return false
+// }
+// const pkg_api = async(query)=>{
+//     let data = await gis(query, { query: { safe },
+//         userAgent:  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+//       },)
+//     if(data && Array.isArray(data) && data.length > 0) return data
+//     else return false
+// }
+ 
+// let func_Img = [pkg_api,gimg_api,bing_api]
+// let res = false
+// for(i=0;i<func_Img.length;i++)
+// {
+//     try{
+//         res = await func_Img[i](query)
+//         if(res && res.length >0) break;
+//     }catch(e){}
+// }
+// return res
+
+// }
+
+
+
+const downloadImages = async (query = "", safe = "on") => {
+    if (!query) throw "need search query";
+
+    // Function to fetch images from the gimg API
+    const gimg_api = async (query) => {
+        try {
+            let { data } = await axios.get(`${api_smd}/api/gimg?query=${encodeURIComponent(query)}`);
+            if (data && data.status && Array.isArray(data.result) && data.result.length > 0) {
+                return data.result;
+            }
+            return false;
+        } catch (error) {
+            console.error("Error fetching images from gimg smd-api-1.vercel.app:", error);
+            return false;
+        }
+    };
+
+    // Function to fetch images from the bingimg API
+    const bing_api = async (query) => {
+        try {
+            let { data } = await axios.get(`${api_smd}/api/bingimg?query=${encodeURIComponent(query)}`);
+            if (data && data.status && Array.isArray(data.result) && data.result.length > 0) {
+                return data.result;
+            }
+            return false;
+        } catch (error) {
+            console.error("Error fetching images from bingimg (smd-api-1.vercel.app) API:", error);
+            return false;
+        }
+    };
+
+    // Function to fetch images using the g-i-s package (Google Images)
+    const pkg_api = async (query) => {
+        try {
+            let data = await gis(query, {
+                query: { safe },
+                userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+            });
+            if (data && Array.isArray(data) && data.length > 0) {
+                return data;
+            }
+            return false;
+        } catch (error) {
+            console.error("Error fetching images from Google Images:", error);
+            return false;
+        }
+    };
+
+    // Array of functions to fetch images from different APIs
+    let func_Img = [pkg_api, gimg_api, bing_api];
+
+    // Iterate over the functions and try fetching images
+    let res = false;
+    for (let i = 0; i < func_Img.length; i++) {
+        try {
+            res = await func_Img[i](query);
+            if (res && res.length > 0) break; // If images are found, break the loop
+        } catch (e) {
+            console.error("Error fetching images:", e);
+        }
+    }
+
+    return res;
+};
+
+// Example usage
+// downImages("your_query")
+//     .then(images => {
+//         console.log("Images:", images);
+//     })
+//     .catch(error => {
+//         console.error("Error:", error);
+//     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //---------------------------------------------------------------------------
@@ -346,26 +501,41 @@ try{
    if (!text) return message.reply(`Provide me a query!\n*Ex : .image luffy |10*`)
    
    let name1 = text.split("|")[0] || text
-   let name2 = text.split("|")[1] || `5`
+   let name2 = text.split("|")[1] || 5
 
 
     let nn = parseInt(name2) || 5
-    let Group = await groupdb.findOne({ id: message.chat })
-    let safe = Group.nsfw == "true" ? "off" : "on"
-try{
-    let n = await gis(name1, { query: { safe: safe },
-        userAgent:  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
-      },)
-console.log("images results : " , n)
 
-    if(n && n[0]){
+
+
+
+
+
+
+
+
+
+
+
+
+try{
+    // let Group = await groupdb.findOne({ id: message.chat }) 
+    // let safe = Group.nsfw === "true" ? "off" : "on" 
+
+    // let n = await gis(name1, { query: { safe },
+    //     userAgent:  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'
+    //   },)
+// console.log("images results : " , n) 
+
+let n = await downloadImages(name1,"off")
+if(n && n[0]){
     nn = n && n.length > nn ? nn : n.length 
-   message.reply(`*_Sending images of '${name1}' in chat!_*`)
+   await message.reply(`*_Sending images of '${name1}' in chat!_*`)
     for (let i = 0; i < nn; i++) {
         try{
-        let random = Math.floor(Math.random() * n.length)
-        message.bot.sendFromUrl(message.jid ,n[random].url,"",message,{},"image" )   
-        n.splice(random, 1);
+            let random = Math.floor(Math.random() * n.length)
+            message.bot.sendFromUrl(message.jid ,n[random].url || n[random],"",message,{},"image" )   
+            n.splice(random, 1);
     }catch {}
     }
     return ;
@@ -460,13 +630,13 @@ smd({
         alias: ["oldwa","bio","onwa"],
         category: "search",
         desc: "Searches in given rage about given number.",
-        use: '254727825xx',
+        use: '9112345678xx',
         filename: __filename,
     },
     async(message, text) => {
- if(!text) return await message.reply('Give Me Number without + sign. Example: .iswa 2547287825xx')
+ if(!text) return await message.reply('Give Me Number without + sign. Example: .iswa 234902786xx')
         var inputnumber = text.split(" ")[0]
-        if (!inputnumber.includes('x')) return message.reply(`*You did not add x*\nExample: iswa 2547287825xx  \n ${Config.caption}`)
+        if (!inputnumber.includes('x')) return message.reply(`*You did not add x*\nExample: iswa 234902786xx  \n ${Config.caption}`)
         message.reply(`*Searching for WhatsApp account in given range...* \n ${Config.caption}`)
 
         function countInstances(string, word) {  return string.split(word).length - 1; }
@@ -500,7 +670,7 @@ smd({
                   try { var anu1 = await message.bot.fetchStatus(anu[0].jid); } 
                   catch { var anu1 = '401' ; }
                   if (anu1 == '401' || anu1.status.length == 0) { nobio += `wa.me/${anu[0].jid.split("@")[0]}\n` ; } 
-                  else {  text += `🧐 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n ✨*Bio :* ${anu1.status}\n🍁*Last update :* ${moment(anu1.setAt).tz('Asia/Karachi').format('HH:mm:ss DD/MM/YYYY')}\n\n` ;   }
+                  else {  text += `🧐 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n ✨*Bio :* ${anu1.status}\n🍁*Last update :* ${moment(anu1.setAt).tz(timezone).format('HH:mm:ss DD/MM/YYYY')}\n\n` ;   }
             } catch { nowhatsapp += ` ≛ ${number0}${i}${number1}\n`; }
         }
         return await message.reply(`${text}${nobio}${nowhatsapp}`)
@@ -513,13 +683,13 @@ smd({
         pattern: "nowa",
         category: "search",
         desc: "Searches in given rage about given number.",
-        use: '2547287825xx',
+        use: '9112345678xx',
         filename: __filename,
     },
     async(message, text) => {
-if(!text) return await message.reply('Give Me Number without + sign. Example: .nowa 2547287825xx')
+if(!text) return await message.reply('Give Me Number without + sign. Example: .nowa 234902786xx')
 const inputNumber = text.split(" ")[0]
-if (!inputNumber.includes('x')) return message.reply(`*You did not add x in number.*\nExample: ${prefix}nowa 2547287825xx  \n ${Config.caption}`)
+if (!inputNumber.includes('x')) return message.reply(`*You did not add x in number.*\nExample: ${prefix}nowa 234902786xx  \n ${Config.caption}`)
 message.reply(`*Searching for WhatsApp account in the given range...*\n${Config.caption}`);
 function countInstances(string, word) { return string.split(word).length - 1; }
 const number0 = inputNumber.split('x')[0];
