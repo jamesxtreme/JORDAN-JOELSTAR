@@ -1055,3 +1055,38 @@ smd(
     }
   }
 );
+smd(
+    {
+      pattern: "blackbox",
+      desc: "Get information and sources for a given text from Blackbox API.",
+      category: "ai",
+      filename: __filename,
+      use: "<text>",
+    },
+    async (message, input) => {
+      try {
+        const text = input.trim();
+        if (!text) {
+          return await message.send("*_Please provide some text to query Blackbox._*");
+        }
+  
+        const apiUrl = `https://aemt.me/blackbox?text=${encodeURIComponent(text)}`;
+        const response = await axios.get(apiUrl, {
+          headers: {
+            "accept": "application/json",
+          },
+        });
+  
+        if (!response.data || !response.data.result) {
+          return await message.reply("*Failed to fetch information from Blackbox.*");
+        }
+  
+        const { result } = response.data;
+        const messageToSend = `\nOk here we Go!: ${result}`;
+        return await message.send(messageToSend);
+      } catch (error) {
+        console.error("Error in Blackbox command:", error);
+        await message.error(error + "\n\nCommand: blackbox", error, "*Failed to fetch information from Blackbox.*");
+      }
+    }
+  );
