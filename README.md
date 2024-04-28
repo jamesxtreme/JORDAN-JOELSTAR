@@ -47,7 +47,7 @@
 
 🕸. ***Get Session ID (SERVER 1)***
     <br>
-<a href='https://miles-session-cc09a251e04b.herokuapp.com/' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=blue&labelColor=black&color=black'/></a>
+<a href='https://msid1-c18884699851.herokuapp.com/' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=blue&labelColor=black&color=black'/></a>
 
 🕸. ***Get Session ID (SERVER 2)***
     <br>
