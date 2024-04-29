@@ -1147,3 +1147,63 @@ async(Void, citel, text,{ isCreator}) => {
 
         }
     )
+cmd({
+            pattern: "unban",
+            category: "owner",
+            filename: __filename,
+            desc: "Restores user access to bot"
+        },
+        async(Void, citel, text,{ isCreator }) => {
+            if (!isCreator) return citel.reply("Command reserved for miles owner")
+            try {
+                let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+                if (!users) return citel.reply("Please specify a user")
+                let pushnamer = Void.getName(users);
+                sck1.findOne({ id: users }).then(async(usr) => {
+                    if (!usr) {
+                        console.log(usr.ban)
+                        return citel.reply(${pushnamer} is unbanned.)
+                    } else {
+                        console.log(usr.ban)
+                        if (usr.ban !== "true") return citel.reply(${usr.name} is already unbanned.)
+                        await sck1.updateOne({ id: users }, { ban: "false" })
+                        return citel.reply(${usr.name} Oga dem don relase you, no mess up again o🤫)
+                    }
+                })
+            } catch {
+                return citel.reply("Please specify a user")
+            }
+
+
+        }
+    )
+    cmd({
+            pattern: "ban",
+            category: "owner",
+            filename: __filename,
+            desc: "revokes user access to bot"
+        },
+        async(Void, citel, text,{ isCreator}) => {
+            if (!isCreator) return citel.reply(tlang().owner)
+            try {
+                let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+                if (!users) return citel.reply(❌ Please specify any user ${tlang().greet}.)
+                let pushnamer = Void.getName(users);
+                sck1.findOne({ id: users }).then(async(usr) => {
+                    if (!usr) {
+                        await new sck1({ id: users, ban: "true" }).save()
+                        return citel.reply(_Banned ${usr.name} from Using Commands._)
+                    } else {
+                        if (usr.ban == "true") return citel.reply(${pushnamer} was already Banned)
+                        await sck1.updateOne({ id: users }, { ban: "true" })
+                        return citel.reply(_Happily Banned ${usr.name} from Using my Commands🕷._)
+                    }
+                })
+            } catch (e) {
+                console.log(e)
+                return citel.reply("Please specify a user ")
+            }
+
+
+        }
+    )
