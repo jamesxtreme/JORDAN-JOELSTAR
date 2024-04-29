@@ -1097,25 +1097,22 @@ smd({
             desc: "Restores user access to bot"
         },
         async(Void, citel, text,{ isCreator }) => {
-            if (!isCreator) return citel.reply("Command reserved for miles owner")
-            try {
-                let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
-                if (!users) return citel.reply("Please specify a user")
+            if (!isCreator) return citel.reply(tlang().owner)
+            try 
+            {
+                let users = citel.quoted ? citel.quoted.sender : citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+                if (!users) return citel.reply("*_Please mention any user_*")
                 let pushnamer = Void.getName(users);
-                sck1.findOne({ id: users }).then(async(usr) => {
-                    if (!usr) {
-                        console.log(usr.ban)
-                        return citel.reply(`${pushnamer} is unbanned.`)
-                    } else {
-                        console.log(usr.ban)
-                        if (usr.ban !== "true") return citel.reply(`${usr.name} is already unbanned.`)
-                        await sck1.updateOne({ id: users }, { ban: "false" })
-                        return citel.reply(`${usr.name} Oga dem don relase you, no mess up again o🤫`)
-                    }
+                sck1.findOne({ id: users }).then(async(usr) =>
+                { // console.log(usr.ban);
+                    if (!usr) { return citel.reply(`${pushnamer} *_Is Unbanned From Using Commands._*`);}
+                    if (usr.ban !== "true") return await citel.reply(`${usr.name} *_Is Already Unbanned._*`);
+                    await sck1.updateOne({ id: users }, { ban: "false" })
+                    return await citel.reply(`*_User_* ${usr.name} *_Unbanned SuccessFully_*`);
                 })
-            } catch {
-                return citel.reply("Please specify a user")
-            }
+            } catch {  return citel.reply("*_Unknown Error Occured_*");  }
+        })
+}
 
 
         }
@@ -1127,25 +1124,25 @@ smd({
             desc: "revokes user access to bot"
         },
         async(Void, citel, text,{ isCreator}) => {
+async(Void, citel, text,{ isCreator}) => {
             if (!isCreator) return citel.reply(tlang().owner)
-            try {
-                let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
-                if (!users) return citel.reply(`❌ Please specify any user ${tlang().greet}.`)
+            try 
+            {
+                let users = citel.quoted ? citel.quoted.sender : citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+                if (!users) return citel.reply(`*_Please Mention A User_*`)
                 let pushnamer = Void.getName(users);
-                sck1.findOne({ id: users }).then(async(usr) => {
-                    if (!usr) {
+                sck1.findOne({ id: users }).then(async(usr) => 
+                {
+                    if (!usr) 
+                    {
                         await new sck1({ id: users, ban: "true" }).save()
-                        return citel.reply(`_Banned ${usr.name} from Using Commands._`)
-                    } else {
-                        if (usr.ban == "true") return citel.reply(`${pushnamer} was already Banned`)
-                        await sck1.updateOne({ id: users }, { ban: "true" })
-                        return citel.reply(`_Happily Banned ${usr.name} from Using my Commands🕷._`)
-                    }
+                        return citel.reply(`*_Banned ${usr.name} from Using Commands._*`)
+                    } 
+                    if (usr.ban == "true") return citel.reply(`${pushnamer} *_is already Banned from Using Commands_*`)
+                    await sck1.updateOne({ id: users }, { ban: "true" })
+                    return citel.reply(`*_Successfully Banned ${usr.name} from Using Commands._*`)
                 })
-            } catch (e) {
-                console.log(e)
-                return citel.reply("Please specify a user ")
-            }
+            } catch (e) {  return citel.reply("*_Please Reply/Mention Any User_*")  }
 
 
         }
