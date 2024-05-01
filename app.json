@@ -28,6 +28,11 @@
       "description": " NAME FOR BOT",
       "required" :false,    
       "value": "《M》《I》《L》《E》《S》"
+    },  
+    "GURL": {
+      "description": "",
+      "required" :false,    
+      "value": "https://whatsapp.com/channel/0029VaCamn3BKfi29OjdbG2P"
     }, 
     "TZ": {
       "description": "PUT TIME_ZONE ACCORDING TO YOUR LOCATION",
