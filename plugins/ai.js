@@ -1055,3 +1055,18 @@ smd(
     }
   }
 );
+cmd({
+        pattern: "support",
+        desc: "Sends official support link.",
+        category: "group",
+        react: "🏪",
+        filename: __filename,
+    },
+    async(Void, citel, text) => {
+        await Void.sendMessage(`${citel.chat}`, {
+            image: log0,
+            caption: `*Support : Official Miles support group*\n*Group link:-https://chat.whatsapp.com/KtwIw190SAAGWP2UJdPiDQ`,
+        });
+
+    }
+)
