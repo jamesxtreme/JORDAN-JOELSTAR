@@ -26,7 +26,7 @@ global.THUMB_IMAGE = process.env.IMAGE || "https://telegra.ph/file/5a06979ab4afb
 
 global.devs = "2349054039891" // Developer Contact
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "2349054039891,2347061138624";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "2349054039891,2347061138624";
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "2349054039891";
 
 
 
