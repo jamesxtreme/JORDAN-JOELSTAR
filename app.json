@@ -1,13 +1,13 @@
 {
-  "name": "Miles@1.0.1",
-  "description": "I am Miles,your friendly neighborhood, built in NodeJs by Jordan-Joelstar for fun\n\t if you have issues :https://tinyurl.com/295kym87",
-  "logo": "https://telegra.ph/file/5a06979ab4afb8ab7dccb.jpg",
-  "keywords": ["whatsappbot", "suhailMd", "suhail Md bot", "Suhail-Md", "SuhailMdWhatsaooBot", "SuhailWaBot","SuhailMD","Suhail Md Whatsapp Bot","multi device"],
-  "success_url": "/suhail/",
-  "app_url": "/qr/",
+    "name": "MILES",
+    "description": "A WHATSAPP BOT",
+    "logo": "https://telegra.ph/file/9fd51255a5206e4f51ea8.jpg",
+    "keywords": ["Miles", "Miles-Md", "Bot"],
+    "success_url": "/",
+    "stack": "container",
   
-  "env": {
-    "OWNER_NAME": {
+    "env": {
+     "OWNER_NAME": {
       "description": "BOT OWNER NAME",    
       "value": "𝕁𝕆ℝ𝔻𝔸ℕ-𝕁𝕆𝔼𝕃𝕊𝕋𝔸ℝ",
       "required" :true
@@ -27,12 +27,7 @@
     "BOT_NAME": {
       "description": " NAME FOR BOT",
       "required" :false,    
-      "value": "《M》《I》《L》《E》《S》"
-    },  
-    "GURL": {
-      "description": "",
-      "required" :false,    
-      "value": "https://whatsapp.com/channel/0029VaCamn3BKfi29OjdbG2P"
+      "value": "🕷🅼︎🅸🄻🅴🅂🕸"
     }, 
     "TZ": {
       "description": "PUT TIME_ZONE ACCORDING TO YOUR LOCATION",
@@ -50,7 +45,7 @@
       "value": "false"
     },
     "WARN_COUNT": {
-      "description": "WARN COUNT FOR USERS TO KICK/BLOCK WHEN WARN LIMIT EXCEEDED!",
+      "description": "WARN COUNT FOR USERS TO KICK/BLOCK WHEN WARN LIMIT IS EXCEEDED!",
       "required" :false,    
       "value": "2"
     },  
@@ -63,6 +58,11 @@
       "description": "PUT YOUR HEROKU API KEY HERE",
       "value": "",
       "required" :true 
+   }, 
+    "SUDO": {
+      "description": "THE PHONE NUMBERS OF THE USERS WHO YOU WANT TO BE ADMIN FOR THE BOT (SHOULD BE IN INTERNATIONAL FORMAT WITHOUT + AND MULTIPLE NUMBERS MUST BE SEPARATED BY A COMMA \",\")",
+      "value": "2349054039891,2347061138624,2348026593544,2349043487099",
+      "required" :false
     },   
     "HEROKU_APP_NAME": {
       "description": "PUT YOUR HEROKU APP NAME HERE-ALL CHARACTERS MUST BE IN LOWERCASE",
@@ -95,11 +95,11 @@
       "required" :false
     },
     "PREFIX": {
-      "description": "ENTER YOUR DESIRED PREFIX FOR BOT. YOU CAN SET `ALL |null | . | .!*`",
+      "description": "ENTER YOUR DESIRED PREFIX FOR BOT. YOU CAN SET `All |null | . | .!*`",
       "value": "."
     },
     "OWNER_NUMBER": {
-      "description": "THE PHONE NUMBERS OF THE USERS WHO YOU WANT TO BE ADMIN FOR THE BOT (SHOULD BE IN INTERNATIONAL FORMAT WITHOUT + AND MULTIPLE NUMBERS MUST BE SEPARATED BY A COMMA \",\")",
+      "description": "BOT OWNERS",
       "value": "2349054039891,2347061138624,2349043487099"
     },
     "SESSION_ID": {
@@ -135,11 +135,11 @@
       "description": "STICKER AUTHOR NAME.",
       "value": "🅹🄾🆁🅳🄰🄽-🅹🄾🅴🄻🅂🅃🄰🆁",
       "required": false 
-    }
-  }, 
-  "addons": [{ "plan": "heroku-postgresq" }],
-  "buildpacks": [
-    { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" },
-    { "url": "https://github.com/carlosdommor/heroku-buildpack-ffmpeg-latest" }
-  ]
+      }
+    },
+    "addons": [{ "plan": "heroku-postgresql" }],
+    "buildpacks": [
+      { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" },
+      { "url": "https://github.com/carlosdommor/heroku-buildpack-ffmpeg-latest" }
+    ]
 }
