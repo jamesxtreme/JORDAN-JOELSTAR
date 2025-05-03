@@ -20,8 +20,14 @@
 • Enable downloads to internal storage via native in-app downloader  
 • YouTube dislike feature reinstated
 
-### YOUTUBE MUSIC
+### YOUTUBE MUSIC MOD FEATURES
 ---
+
+• background play.
+• Offline streaming available.
+• Music download capability enabled.
+• AMOLED display supported.
+• No advertisements.
 
 ### TWITTER (X)
 ---
