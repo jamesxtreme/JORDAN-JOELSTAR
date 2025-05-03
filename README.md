@@ -66,11 +66,13 @@
 
 • Steady influx of new movies
 
+### PRICING 
 ---
-
+• $3.2 for a single app
+• $9.6 for all four apps
 
  <details close>
-<summary>FOR PURCHASE</summary>
+<summary>FOR MORE DETAILS OR PURCHASE</summary>
   
    ## 
   [`WHATSAPP`](https://wa.me/+27623452010)
