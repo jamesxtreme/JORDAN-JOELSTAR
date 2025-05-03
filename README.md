@@ -9,8 +9,16 @@
 
 
 
-### YOUTUBE
+### YOUTUBE MOD FEATURES
 ---
+• All videos available for download  
+• High-quality downloads and streaming {1080p unlocked ✅}  
+• Ad-free experience activated  
+• 1080p streaming for shorts  
+• Background playback restrictions removed  
+• Default Dark mode color altered to AMOLED  
+• Enable downloads to internal storage via native in-app downloader  
+• YouTube dislike feature reinstated
 
 ### YOUTUBE MUSIC
 ---
