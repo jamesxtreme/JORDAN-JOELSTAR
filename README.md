@@ -53,5 +53,5 @@
   
    ## 
   [`WHATSAPP`](https://wa.me/2349054039891)
-  [`🕷COLLINS`](https://wa.me/+64204918166)
+  [`TELEGRAM`](T.me/@Modyss_ey)
   
