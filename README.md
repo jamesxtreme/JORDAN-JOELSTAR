@@ -25,9 +25,9 @@
 
 
  <details close>
-<summary>𝗖𝗢𝗡𝗧𝗥𝗜𝗕𝗨𝗧𝗢𝗥𝗦</summary>
+<summary>FOR PURCHASE</summary>
   
    ## 
-  [`🕷NIMI`](https://wa.me/2349054039891)
+  [`WHATSAPP`](https://wa.me/2349054039891)
   [`🕷COLLINS`](https://wa.me/+64204918166)
   
