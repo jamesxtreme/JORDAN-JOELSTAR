@@ -12,12 +12,19 @@
 ### YOUTUBE MOD FEATURES
 ---
 • All videos available for download  
+
 • High-quality downloads and streaming {1080p unlocked ✅}  
+
 • Ad-free experience activated  
+
 • 1080p streaming for shorts  
+
 • Background playback restrictions removed  
+
 • Default Dark mode color altered to AMOLED  
+
 • Enable downloads to internal storage via native in-app downloader  
+
 • YouTube dislike feature reinstated
 
 ### YOUTUBE MUSIC MOD FEATURES
@@ -38,19 +45,28 @@
 ### TWITTER (X)
 ---
 • Dynamic theme (Material You)
+
 • Video download unlocked
+
 • Hide ads
+
 • Hide view counts
+
 • Sanitize links
 
 ### MOVIE APP
 ---
 • Zero ads
+
 • Zero cost 
+
 • 2140p resolution unlocked
+
 • Seamless backplay 
+
 • Steady influx of new movies
 
+---
 
 
  <details close>
