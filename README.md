@@ -27,6 +27,7 @@
 • Offline streaming available
 • Ad-free experience activated  
 • Music download capability enabled 
+• Backplay features 
 • Amoled support 
 
 ### TWITTER (X)
@@ -39,7 +40,11 @@
 
 ### MOVIE APP
 ---
-
+• Zero ads
+• Zero cost 
+• 2140p resolution unlocked
+• Seamless backplay 
+• Steady influx of new movies
 
 
 
