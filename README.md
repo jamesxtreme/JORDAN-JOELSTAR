@@ -82,6 +82,8 @@
 
 • Resale after purchase allowed✅
 
+• Full installation guide available 
+
  <details close>
 <summary>FOR MORE DETAILS OR PURCHASE</summary>
   
