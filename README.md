@@ -23,11 +23,12 @@
 ### YOUTUBE MUSIC MOD FEATURES
 ---
 
-• background play
-• Offline streaming available
-• Music download capability enabled
-• AMOLED display supported
-• No advertisements
+• All videos available for download  
+• High-quality downloads and streaming {1080p unlocked ✅}  
+• Ad-free experience activated  
+• 1080p streaming for shorts  
+• Background playback restrictions removed  
+• Default Dark mode color altered to AMOLED  
 
 ### TWITTER (X)
 ---
