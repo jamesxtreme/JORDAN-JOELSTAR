@@ -1,31 +1,11 @@
-![](https://github.com/jamesxtreme/gif/blob/main/919.gif)
-
-<p align="center">
-    <img alt="Suhail docs" height="300" src="https://telegra.ph/file/5a06979ab4afb8ab7dccb.jpg">
-  </a>
-</p>
 
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=🕸HI+THERE🕸️;🕷IM+MILES🕷;🎧CREATED+BY+JORDAN-JOELSTAR🎧)](https://git.io/typing-svg)
+
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=YOUTUBE;YOUTUBE+MUSIC;TWITTER;MOVIE+APP)](https://git.io/typing-svg)
 </p>
 
 ---
 
-<p align="center">
-  <a href="https://github.com/jamesxtreme/JORDAN-JOELSTAR"><b>《M》《I》《L》《E》《S》</b></a> SUPPORT DEPLOY ON...
-</p>
-
-<p align="center">
-    <br>
-<a href='https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2Fjamesxtreme%2FJORDAN-JOELSTAR' target="_blank"><img alt='DEPLOY' src='https://img.shields.io/badge/-HEROKU-blue?style=for-the-badge&logo=heroku&logoColor=white'/></a>
-
-
-</p>
-<p align="center">
-  <a href="https://youtu.be/3NdJb6_1cJM"><img src="https://img.shields.io/badge/CodeSpace-blue?colorA=%23ff000&colorB=%23017e40&style=for-the-badge&logo=git&logoColor=white"></a>
-</p>
-<p align="center">NEED HELP? PLEASE CREATE AN <a href="https://github.com/jamesxtreme/JORDAN-JOELSTAR/issues">ISSUE</a></p>
- 
 
 
 
