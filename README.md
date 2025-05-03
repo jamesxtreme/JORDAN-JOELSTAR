@@ -52,15 +52,8 @@
 
  <details close>
 <summary>𝗖𝗢𝗡𝗧𝗥𝗜𝗕𝗨𝗧𝗢𝗥𝗦</summary>
-
-| [![SUHAILTECHINFO](https://telegra.ph/file/3d0ebc84bc5d6d7c5f262.jpg?lenght=50width=50)](https://github.com/SuhailTechInfo) |
-|----|
-| [SUHAILTECHINFO](https://github.com/SuhailTechInfo) |
-|  BOT BASE , ERROR FIXES, |
-
-  </div>
   
    ## 
-  [`🕷NIMI`](https://wa.me/2349031432649)
+  [`🕷NIMI`](https://wa.me/2349054039891)
   [`🕷COLLINS`](https://wa.me/+64204918166)
   
