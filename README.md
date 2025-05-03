@@ -23,11 +23,16 @@
 ### YOUTUBE MUSIC MOD FEATURES
 ---
 
-• background play  
+• background play 
+
 • Offline streaming available
+
 • Ad-free experience activated  
+
 • Music download capability enabled 
+
 • Backplay features 
+
 • Amoled support 
 
 ### TWITTER (X)
