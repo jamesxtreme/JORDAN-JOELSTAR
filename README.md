@@ -73,6 +73,6 @@
 <summary>FOR PURCHASE</summary>
   
    ## 
-  [`WHATSAPP`](https://wa.me/2349054039891)
+  [`WHATSAPP`](https://wa.me/+27623452010)
   [`TELEGRAM`](https://T.me/Modyss_ey)
   
