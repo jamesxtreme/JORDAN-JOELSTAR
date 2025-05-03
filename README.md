@@ -78,13 +78,13 @@
 
 • Zero malware or spyware in apps 
 
-• modded Youtube,YT music and X works with already existing account.
+• Modded Youtube,YT music and X works with already existing account
 
-•
+• Resale after purchase allowed✅
 
  <details close>
 <summary>FOR MORE DETAILS OR PURCHASE</summary>
   
-  [`WHATSAPP`](https://wa.me/+27623452010)
-  [`TELEGRAM`](https://T.me/Modyss_ey)
+  [`WHATSAPP👉🏽`](https://wa.me/+27623452010)
+  [`TELEGRAM👉🏽`](https://T.me/Modyss_ey)
   
