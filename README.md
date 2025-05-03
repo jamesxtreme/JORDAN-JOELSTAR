@@ -36,7 +36,7 @@
 
 🕸. ***Get Session ID (SERVER 1)***
     <br>
-<a href='[https://api.whatsapp.com/message/2JRLDBPNNDM5K1?autoload=1&app_absent=0]' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=blue&labelColor=black&color=black'/></a>
+<a href='[https://wa.me/message/2JRLDBPNNDM5K1]' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=blue&labelColor=black&color=black'/></a>
 
 🕸. ***Get Session ID (SERVER 2)***
     <br>
