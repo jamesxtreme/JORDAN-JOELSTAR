@@ -69,12 +69,22 @@
 ### PRICING 
 ---
 • $3.2 for a single app
+
 • $9.6 for all four apps
+
+### NB
+---
+• Rooting not required as all mods work without root.
+
+• Zero malware or spyware in apps 
+
+• modded Youtube,YT music and X works with already existing account.
+
+•
 
  <details close>
 <summary>FOR MORE DETAILS OR PURCHASE</summary>
   
-   ## 
   [`WHATSAPP`](https://wa.me/+27623452010)
   [`TELEGRAM`](https://T.me/Modyss_ey)
   
